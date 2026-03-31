@@ -992,6 +992,33 @@ export class ChatService {
 }
 ```
 
+### Example: Security Central - Enterprise Security Management
+
+**Key Features Demonstrated:**
+- Multi-team subscription management with toggle controls
+- Filter panel with team-based filtering
+- Policy-based authorization with OCI Identity
+- Multi-step onboarding flow with routing
+
+#### Onboarding Instructions (Multi-step Routing)
+![Security Central Onboarding Instructions](https://github.com/user-attachments/assets/d91f2da6-6905-47bd-9333-81ef544e7868)
+
+#### Prerequisites and Overview
+![Security Central Prerequisites and Overview](https://github.com/user-attachments/assets/15e41d4a-db00-403f-8185-f1cb8421f690)
+
+#### Identity Policy Setup
+![Security Central Identity Policy Setup](https://github.com/user-attachments/assets/29d20ce8-e1d0-4e9a-98c9-b277077cbf02)
+
+#### Team Subscription Management with Toggle
+![Security Central Team Subscriptions with Toggle](https://github.com/user-attachments/assets/4485f484-25fa-4dfb-9a19-4036488cb906)
+
+**Angular Patterns Used:**
+- **Reactive Forms**: Filter panel with `FormControl` for team selection
+- **Toggle Component**: `[(ngModel)]` two-way binding for the subscription toggle
+- **BehaviorSubject**: Managing the team list and subscription state
+- **HTTP + Observables**: Loading teams and subscription status from an API
+- **Route Guards**: Authorization checks (`canActivate`) before accessing secured pages
+
 ---
 
 ## Architecture Diagrams
